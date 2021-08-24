@@ -1,0 +1,43 @@
+@import "./globalvars.scss";
+
+.main {
+  margin: 60px 10vw;
+}
+
+.patternBackground {
+  position: absolute;
+  width: 100vw;
+  height: 3000px;
+  opacity: 0.2;
+}
+
+.person {
+  position: absolute;
+  right: 4vw;
+  height: 165px;
+  width: 320px;
+}
+
+.offsetBackgroundLightGrey {
+  position: absolute;
+  top: 248px;
+  z-index: -1;
+  position: absolute;
+  margin: 0 -10vw;
+  width: 100vw;
+  height: 500px;
+}
+
+@media(max-width: $mobile-breakpoint) {
+  .offsetBackgroundLightGrey {
+    top:200px;
+  }
+}
+
+@media (max-width: $breakpoint) {
+  .person {
+    display: none;
+  }
+}
+
+
