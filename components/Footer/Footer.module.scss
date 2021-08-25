@@ -1,0 +1,67 @@
+@import "../../styles/globalvars.scss";
+
+.footer {
+  position: absolute;
+   
+  z-index: 5;
+  top: 2640px;
+  left: 0;
+  width: 100vw;
+  height: 140px;
+  background-color: rgb(153,153,153);
+}
+
+.bottomFooter{
+  position: relative;
+  top: 10px;
+  width:100vw;
+  height: 36px;
+  font-size: 10px;
+  background-color: $red;
+}
+
+.githubLogo {
+  opacity: 0.6;
+  height: 90px;
+  margin: 10px 0 0 14vw;
+}
+
+.cryptoContainer {
+  position: relative;
+  display: inline-block;
+  left: 36vw;
+  transform: translate(-67%, -24px);
+  background-color: #aaaaaa55;
+  border-radius: 10px;
+}
+
+.cryptoInnerContainer {
+  width: 600px;
+  height: 36px;
+  font-size: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bnbImg {
+  height: 30px;
+  margin-right: 40px;
+  opacity: 0.8;
+}
+
+.ethImg {
+  height: 30px;
+  margin-left: 6px;
+  margin-right: 46px;
+  opacity: 0.8;
+}
+
+.kwlogo {
+  position: absolute;
+  height: 90px;
+  top: 12px;
+  right: 14vw;
+}
+

@@ -5,6 +5,7 @@ import c from "../styles/Home.module.scss";
 import Navbar from "../components/Navbar/Navbar";
 import TitleBanner from "../components/TitleBanner/TitleBanner";
 import DownloadBox from "../components/DownloadBox/DownloadBox";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   let content = "width=device-width, initial-scale=0.6";
@@ -81,33 +82,34 @@ export default function Home() {
           </video>
           <img
             draggable="false"
-            src="/assets/wave background.png"
+            src="/assets/waves with lines.png"
             alt="~"
             className={c.wavesBackground}
           />
-          <img
-            draggable="false"
-            src="/assets/line1.png"
-            alt="~"
-            className={c.line1}
-          />
-          <img
-            draggable="false"
-            src="/assets/line3.png"
-            alt="~"
-            className={c.line3}
-          />
-          <img
-            draggable="false"
-            src="/assets/line4.png"
-            alt="~"
-            className={c.line4}
-          />
+          {/* <img */}
+          {/*   draggable="false" */}
+          {/*   src="/assets/line1.png" */}
+          {/*   alt="~" */}
+          {/*   className={c.line1} */}
+          {/* /> */}
+          {/* <img */}
+          {/*   draggable="false" */}
+          {/*   src="/assets/line3.png" */}
+          {/*   alt="~" */}
+          {/*   className={c.line3} */}
+          {/* /> */}
+          {/* <img */}
+          {/*   draggable="false" */}
+          {/*   src="/assets/line4.png" */}
+          {/*   alt="~" */}
+          {/*   className={c.line4} */}
+          {/* /> */}
           <TitleBanner className={c.titleBanner3} accentColor="green">
             Download MIYT
           </TitleBanner>
           <DownloadBox />
         </main>
+        <Footer />
       </div>
     </>
   );
