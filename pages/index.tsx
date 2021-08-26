@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import Head from "next/head";
 import Image from "next/image";
+import { animateScroll as scroll } from "react-scroll";
 import c from "../styles/Home.module.scss";
 
 import Navbar from "../components/Navbar/Navbar";
@@ -10,13 +11,11 @@ import Footer from "../components/Footer/Footer";
 import Eyes from "../components/Eyes/Eyes";
 
 export default function Home() {
-  const moreInfoRef = useRef();
   const scrollToMoreInfo = () => {
-    const node = moreInfoRef.current;
-    if (node != null) {
-      //@ts-ignore
-      node.scrollIntoView();
-    }
+    scroll.scrollTo(window.innerHeight / 3);
+  };
+  const scrollToDownload = () => {
+    scroll.scrollTo(window.innerHeight * 2);
   };
   let content = "width=device-width, initial-scale=0.6";
   return (
@@ -32,7 +31,10 @@ export default function Home() {
           src="../assets/pattern background.png"
           alt="MIYT"
         />
-        <Navbar moreInfoClicked={() => scrollToMoreInfo()} />
+        <Navbar
+          moreInfoClicked={() => scrollToMoreInfo()}
+          downloadClicked={() => scrollToDownload()}
+        />
         <main className={c.main}>
           <TitleBanner className={c.titleBanner1} accentColor="yellow">
             Need video or audio from YouTube?
@@ -43,13 +45,15 @@ export default function Home() {
             src="/assets/offset light block.png"
             alt=":)"
           />
-          <Eyes />
-          <img
-            draggable="false"
-            className={c.person}
-            src="/assets/person.png"
-            alt=":)"
-          />
+          <div className={c.personContainer}>
+            <Eyes />
+            <img
+              draggable="false"
+              className={c.person}
+              src="/assets/person.png"
+              alt=":)"
+            />
+          </div>
           <img
             draggable="false"
             className={c.applicationImage}
@@ -77,6 +81,7 @@ export default function Home() {
             src="/assets/line2.png"
             alt=":)"
           />
+
           <TitleBanner className={c.titleBanner2} right accentColor="red">
             Watch MIYT in action
           </TitleBanner>

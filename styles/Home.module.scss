@@ -3,6 +3,7 @@
 
 .main {
   margin: 60px 10vw;
+  width: 100vw;
 }
 
 .patternBackground {
@@ -12,9 +13,14 @@
   opacity: 0.2;
 }
 
-.person {
+.personContainer {
+
   position: absolute;
   right: 4vw;
+  top: 100px;
+}
+
+.person {
   height: 165px;
   width: 320px;
 }

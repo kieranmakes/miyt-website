@@ -3,6 +3,7 @@ import c from "./Navbar.module.scss";
 
 interface Props {
   moreInfoClicked: () => void;
+  downloadClicked: () => void;
 }
 
 const Navbar = (props: Props) => {
@@ -18,7 +19,12 @@ const Navbar = (props: Props) => {
         <p onClick={() => props.moreInfoClicked()} className={c.navItem}>
           Learn More
         </p>
-        <p className={[c.downloadNavItem, c.navItem].join(" ")}>Download</p>
+        <p
+          onClick={() => props.downloadClicked()}
+          className={[c.downloadNavItem, c.navItem].join(" ")}
+        >
+          Download
+        </p>
       </div>
     </div>
   );
