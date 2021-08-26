@@ -17,7 +17,7 @@ function Footer() {
         </div>
       </div>
       <img src="/assets/kw logo.png" alt="kw" className={c.kwlogo} />
-      <div className={c.bottomFooter}>hellog</div>
+      <div className={c.bottomFooter}><strong className={c.crSymbol}>©</strong> 2021 MIYT. All rights reserved.</div>
     </div>
   );
 }

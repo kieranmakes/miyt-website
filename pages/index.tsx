@@ -1,3 +1,4 @@
+import React, { useRef } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import c from "../styles/Home.module.scss";
@@ -6,8 +7,17 @@ import Navbar from "../components/Navbar/Navbar";
 import TitleBanner from "../components/TitleBanner/TitleBanner";
 import DownloadBox from "../components/DownloadBox/DownloadBox";
 import Footer from "../components/Footer/Footer";
+import Eyes from "../components/Eyes/Eyes";
 
 export default function Home() {
+  const moreInfoRef = useRef();
+  const scrollToMoreInfo = () => {
+    const node = moreInfoRef.current;
+    if (node != null) {
+      //@ts-ignore
+      node.scrollIntoView();
+    }
+  };
   let content = "width=device-width, initial-scale=0.6";
   return (
     <>
@@ -22,7 +32,7 @@ export default function Home() {
           src="../assets/pattern background.png"
           alt="MIYT"
         />
-        <Navbar />
+        <Navbar moreInfoClicked={() => scrollToMoreInfo()} />
         <main className={c.main}>
           <TitleBanner className={c.titleBanner1} accentColor="yellow">
             Need video or audio from YouTube?
@@ -33,6 +43,7 @@ export default function Home() {
             src="/assets/offset light block.png"
             alt=":)"
           />
+          <Eyes />
           <img
             draggable="false"
             className={c.person}
@@ -69,17 +80,23 @@ export default function Home() {
           <TitleBanner className={c.titleBanner2} right accentColor="red">
             Watch MIYT in action
           </TitleBanner>
-          <video
-            // height={"60vh"}
-            // width={"100vw"}
+          {/* <video */}
+          {/*   // height={"60vh"} */}
+          {/*   // width={"100vw"} */}
+          {/*   className={c.video} */}
+          {/*   muted */}
+          {/*   autoPlay */}
+          {/*   loop */}
+          {/* > */}
+          {/*   <source src="/assets/miyt.mov" type="video/mp4" /> */}
+          {/*   Your browser does not support the video tag. */}
+          {/* </video> */}
+          <img
+            src="/assets/miyt.gif"
+            alt="miyt video"
+            draggable={false}
             className={c.video}
-            muted
-            autoPlay
-            loop
-          >
-            <source src="/assets/miyt.mov" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          />
           <img
             draggable="false"
             src="/assets/waves with lines.png"
