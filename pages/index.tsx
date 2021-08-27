@@ -15,9 +15,9 @@ export default function Home() {
     scroll.scrollTo(window.innerHeight / 3);
   };
   const scrollToDownload = () => {
-    scroll.scrollTo(window.innerHeight * 2);
+    scroll.scrollTo(window.innerHeight * 10);
   };
-  let content = "width=device-width, initial-scale=0.5";
+  let content = "width=device-width, initial-scale=0.7";
   return (
     <>
       <Head>
