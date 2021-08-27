@@ -4,12 +4,14 @@ import c from "./Footer.module.scss";
 function Footer() {
   return (
     <div className={c.footer}>
-      <img
-        src="/assets/github.png"
-        draggable={false}
-        alt=""
-        className={c.githubLogo}
-      />
+      <a href="https://github.com/kieranmakes" target="_blank">
+        <img
+          src="/assets/github.png"
+          draggable={false}
+          alt=""
+          className={c.githubLogo}
+        />
+      </a>
       <div className={c.cryptoContainer}>
         <div className={c.cryptoInnerContainer}>
           <img src="/assets/eth.png" alt="eth" className={c.ethImg} />
@@ -17,7 +19,10 @@ function Footer() {
         </div>
       </div>
       <img src="/assets/kw logo.png" alt="kw" className={c.kwlogo} />
-      <div className={c.bottomFooter}><strong className={c.crSymbol}>©</strong> 2021 MIYT. All rights reserved.</div>
+      <div className={c.bottomFooter}>
+        <strong className={c.crSymbol}>©</strong> 2021 MIYT. All rights
+        reserved.
+      </div>
     </div>
   );
 }
