@@ -27,6 +27,10 @@
   height: 84px;
   font-size: 42px;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 .hrRed {

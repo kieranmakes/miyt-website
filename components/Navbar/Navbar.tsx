@@ -16,7 +16,10 @@ const Navbar = (props: Props) => {
         alt="MIYT"
       />
       <div className={c.navItems}>
-        <p onClick={() => props.moreInfoClicked()} className={c.navItem}>
+        <p
+          onClick={() => props.moreInfoClicked()}
+          className={[c.navItem, c.underline].join(" ")}
+        >
           Learn More
         </p>
         <p
