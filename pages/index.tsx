@@ -17,7 +17,7 @@ export default function Home() {
   const scrollToDownload = () => {
     scroll.scrollTo(window.innerHeight * 2);
   };
-  let content = "width=device-width, initial-scale=0.6";
+  let content = "width=device-width, initial-scale=1.0";
   return (
     <>
       <Head>
