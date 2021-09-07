@@ -93,7 +93,7 @@
 
 @media (max-width: $breakpoint) {
   .footer {
-    top: 2440px;
+    top: 2380px;
   }
 }
 
@@ -103,23 +103,32 @@
     top: 1630px;
   }
   .githubLogo {
-    height: 60px;
+    height: 40px;
     left: 20vw;
   }
   .kwlogo {
-    height: 60px;
-    right: 34vw;
+    height: 40px;
+    right: 30vw;
   }
   .cryptoContainer{
-    transform: translate(-70%, 30px);
+    transform: translate(-60%, 36px);
   }
   .bottomFooter {
     top: 46px;
+    font-size: 12px;
+    // padding-left: 25vw;
+    align-self: center;
   }
 }
 
 @media(max-width: 550px) {
   .footer {
-    top: 1540px;
+    top: 1500px;
+  }
+}
+
+@media(max-width: 400px) {
+  .cryptoContainer{
+    transform: translate(-30%, 20px);
   }
 }

@@ -1,10 +1,13 @@
 @import '../../styles/globalvars.scss';
 .eyesFollow {
   position: relative;
+  width: 85px;
   z-index: 10;
   top: 70px;
+  margin: 0;
   // right: -60px;
   left: 65px;
+  // margin-right: 0px;
 }
 
 .eyes {

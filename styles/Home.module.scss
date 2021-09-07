@@ -111,6 +111,7 @@
 
 .video {
   position: absolute;
+  z-index: 100;
   top: 1140px;
   left: 17vw;
   height: 610px;
@@ -216,6 +217,7 @@
   .questionTitle {
     left: 8vw;
     top: 220px;
+    font-size : 60px;
   }
   .infoBox {
     top: 350px;
@@ -235,8 +237,8 @@
     top: 120px;
   }
   .titleBanner2 {
-    font-size: 30px;
-    height: 50px;
+    font-size: 24px;
+    height: 42px;
     top: 640px;
   }
   .video {
@@ -260,12 +262,34 @@
 
 @media(max-width: 550px) {
   .wavesBackground {
-    top: 1020px;
+    top: 940px;
     height: 600px;
+  }
+  .questionTitle {
+    font-size: 30px;
+  }
+  .infoBox {
+    top: 300px;
+  }
+  .titleBanner1 {
+  font-size: 24px;
+  top: 110px;
+  width: 340px;
+  height: 50px;
   }
   .titleBanner3 {
   font-size: 30px;
   top: 1100px;
   width: 200px
+  }
+}
+
+
+@media(max-width: 420px) {
+  .titleBanner1 {
+    top: 118px;
+    font-size: 18px;
+    width: 252px;
+    height: 36px;
   }
 }

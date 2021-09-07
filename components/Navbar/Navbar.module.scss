@@ -62,8 +62,14 @@
     font-size: 20px;
     width: 200px;
   }
-  .downloadNavItem:hover {
-    background-color: #666;
-    animation: none;
+}
+
+
+@media (max-width: 420px) {
+  .navItems {
+    margin-top: -10px;
+    margin-right: 2vw;
+    font-size: 15px;
+    width: 160px;
   }
 }
