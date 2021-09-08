@@ -35,17 +35,17 @@
 
 .hrRed {
   position: relative;
-  top: 36px;
-  width: 100%;
+  width: 70%;
   height: 10px;
   background-color: $red;
+  margin: -20px auto;
 }
 .hrYellow {
   position: relative;
-  top: 36px;
-  width: 100%;
+  width: 70%;
   height: 10px;
   background-color: $yellow;
+  margin: -20px auto;
 }
 
 
@@ -78,12 +78,14 @@
   }
 
 .hrRed {
-  top: 20px;
   height: 8px;
+  width: 66%;
+  margin: -10px auto;
 }
 .hrYellow {
-  top: 20px;
   height: 8px;
+  width: 66%;
+  margin: -10px auto;
 }
 }
 
@@ -99,11 +101,5 @@
     height: 50px;
     font-size: 24px;
     cursor: pointer;
-  }
-  .hrRed {
-    top: 15px;
-  }
-  .hrYellow {
-    top: 15px;
   }
 }
