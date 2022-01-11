@@ -36,7 +36,10 @@ export default function Home() {
           property="og:description"
           content="MIYT is a cross platform desktop application. Download multiple videos at once, as video or audio. Search by URL or video names. Edit metadata of downloads. Change video selection from app"
         />
-        <meta property="og:image" content="../assets/useMiyt.xyz" />
+        <meta
+          property="og:image"
+          content="https://ipfs.io/ipfs/QmbZQufpYr1TjQLhwNPrTrQEW3f85Goc5Y6AoxkWGAMgsE?filename=useMiyt.png"
+        />
 
         {/* <!-- Twitter --> */}
         {/* <meta property="twitter:card" content="summary_large_image"> */}
