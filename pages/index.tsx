@@ -23,6 +23,27 @@ export default function Home() {
       <Head>
         <title>MIYT</title>
         <meta name="viewport" content={content} />
+
+        <meta
+          name="description"
+          content="MIYT is a cross platform desktop application. Download multiple videos at once, as video or audio. Search by URL or video names. Edit metadata of downloads. Change video selection from app"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://miyt.xyz/" />
+        <meta property="og:title" content="MIYT" />
+        <meta
+          property="og:description"
+          content="MIYT is a cross platform desktop application. Download multiple videos at once, as video or audio. Search by URL or video names. Edit metadata of downloads. Change video selection from app"
+        />
+        <meta property="og:image" content="../assets/useMiyt.xyz" />
+
+        {/* <!-- Twitter --> */}
+        {/* <meta property="twitter:card" content="summary_large_image"> */}
+        {/* <meta property="twitter:url" content="https://metatags.io/"> */}
+        {/* <meta property="twitter:title" content="MIYT"> */}
+        {/* <meta property="twitter:description" content="MIYT is a cross platform desktop application. Download multiple videos at once, as video or audio. Search by URL or video names. Edit metadata of downloads. Change video selection from app"> */}
+        {/* <meta property="twitter:image" content="/assets/useMiyt.png"> */}
       </Head>
       <div>
         <img
