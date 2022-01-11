@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>MIYT</title>
+        <title>MIYT - YouTube Downloader</title>
         <meta name="viewport" content={content} />
 
         <meta
@@ -31,22 +31,27 @@ export default function Home() {
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://miyt.xyz/" />
-        <meta property="og:title" content="MIYT" />
+        <meta property="og:title" content="MIYT - YouTube Downloader" />
         <meta
           property="og:description"
           content="MIYT is a cross platform desktop application. Download multiple videos at once, as video or audio. Search by URL or video names. Edit metadata of downloads. Change video selection from app"
         />
         <meta
           property="og:image"
-          content="https://ipfs.io/ipfs/QmbZQufpYr1TjQLhwNPrTrQEW3f85Goc5Y6AoxkWGAMgsE?filename=useMiyt.png"
+          content="https://i.ibb.co/K7WPbmJ/useMiyt.png"
         />
 
-        {/* <!-- Twitter --> */}
-        {/* <meta property="twitter:card" content="summary_large_image"> */}
-        {/* <meta property="twitter:url" content="https://metatags.io/"> */}
-        {/* <meta property="twitter:title" content="MIYT"> */}
-        {/* <meta property="twitter:description" content="MIYT is a cross platform desktop application. Download multiple videos at once, as video or audio. Search by URL or video names. Edit metadata of downloads. Change video selection from app"> */}
-        {/* <meta property="twitter:image" content="/assets/useMiyt.png"> */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://miyt.xyz" />
+        <meta property="twitter:title" content="MIYT" />
+        <meta
+          property="twitter:description"
+          content="MIYT is a cross platform desktop application. Download multiple videos at once, as video or audio. Search by URL or video names. Edit metadata of downloads. Change video selection from app"
+        />
+        <meta
+          property="twitter:image"
+          content="https://i.ibb.co/K7WPbmJ/useMiyt.png"
+        />
       </Head>
       <div>
         <img
