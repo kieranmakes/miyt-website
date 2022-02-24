@@ -114,17 +114,6 @@ export default function Home() {
           <TitleBanner className={c.titleBanner2} right accentColor="red">
             Watch MIYT in action
           </TitleBanner>
-          {/* <video */}
-          {/*   // height={"60vh"} */}
-          {/*   // width={"100vw"} */}
-          {/*   className={c.video} */}
-          {/*   muted */}
-          {/*   autoPlay */}
-          {/*   loop */}
-          {/* > */}
-          {/*   <source src="/assets/miyt.mov" type="video/mp4" /> */}
-          {/*   Your browser does not support the video tag. */}
-          {/* </video> */}
           <img
             src="/assets/miyt.gif"
             alt="miyt video"
@@ -137,24 +126,6 @@ export default function Home() {
             alt="~"
             className={c.wavesBackground}
           />
-          {/* <img */}
-          {/*   draggable="false" */}
-          {/*   src="/assets/line1.png" */}
-          {/*   alt="~" */}
-          {/*   className={c.line1} */}
-          {/* /> */}
-          {/* <img */}
-          {/*   draggable="false" */}
-          {/*   src="/assets/line3.png" */}
-          {/*   alt="~" */}
-          {/*   className={c.line3} */}
-          {/* /> */}
-          {/* <img */}
-          {/*   draggable="false" */}
-          {/*   src="/assets/line4.png" */}
-          {/*   alt="~" */}
-          {/*   className={c.line4} */}
-          {/* /> */}
           <TitleBanner className={c.titleBanner3} accentColor="green">
             Download MIYT
           </TitleBanner>
